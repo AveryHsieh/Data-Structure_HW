@@ -8,23 +8,39 @@
       "output": "",
       "comparison": "included",
       "timeout": 5,
-      "points": 40
+      "points": 20
     },
     {
-      "name": "try 1",
+      "name": "Dynamic Array (k=15~25)",
       "setup": "make a.out",
-      "run": "./a.out 1",
+      "run": "./a.out vector 15 26 200",
       "comparison": "included",
       "timeout": 1200,
-      "points": 30
+      "points": 20
     },
     {
-      "name": "try 2",
+      "name": "Dynamic Array (k=25~30)",
       "setup": "make a.out",
-      "run": "./a.out 10",
+      "run": "./a.out vector 25 31 10",
       "comparison": "included",
       "timeout": 1200,
-      "points": 30
+      "points": 20
+    },
+    {
+      "name": "Linked List (k=15~25)",
+      "setup": "make a.out",
+      "run": "./a.out list 15 26 200",
+      "comparison": "included",
+      "timeout": 1200,
+      "points": 20
+    },
+    {
+      "name": "Linked List (k=25~30)",
+      "setup": "make a.out",
+      "run": "./a.out list 25 31 10",
+      "comparison": "included",
+      "timeout": 1200,
+      "points": 20
     }
    
   ]
