@@ -13,8 +13,8 @@
     {
       "name": "Dynamic Array (k=15~25)",
       "setup": "make a.out",
-      "run": "./a.out vector 1 2 2",
-      "input":"",
+      "run": "./a.out ",
+      "input":"vector 1 2 2",
       "comparison": "included",
       "timeout": 1200,
       "points": 20
