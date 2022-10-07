@@ -106,7 +106,6 @@ int main()
     cin >> dataStruc;
     if (dataStruc == "vector")
     {
-        printf("tttttttttt");
         vectorTest();
     }
     else
