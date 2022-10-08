@@ -63,7 +63,7 @@ void listTest() {
     cin >> repeat;
 
     cout << "重複 " << repeat << " 次取平均" << "\n";
-    for (int k = start; k <= (end+1); k++)
+    for (int k = start; k < (end+1); k++)
     {
         double addTotalSpendTime = 0;
         double sumTotalSpendTime = 0;
