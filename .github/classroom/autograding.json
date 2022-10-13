@@ -20,10 +20,10 @@
       "points": 20
     },
     {
-      "name": "Dynamic Array (k=24~30)",
+      "name": "Dynamic Array (k=25~30)",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"vector 24 30 10",
+      "input":"vector 25 30 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 20
@@ -38,10 +38,10 @@
       "points": 20
     },
     {
-      "name": "Linked List (k=24~30)",
+      "name": "Linked List (k=25~30)",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"list 24 30 10",
+      "input":"list 25 30 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 20
