@@ -14,16 +14,16 @@
       "name": "Dynamic Array (k=15~24)",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"vector 15 24 200",
+      "input":"vector 15 24 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 20
     },
     {
-      "name": "Dynamic Array (k=25~30)",
+      "name": "Dynamic Array (k=25~33)",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"vector 25 30 10",
+      "input":"vector 25 33 1",
       "comparison": "included",
       "timeout": 1200,
       "points": 20
@@ -32,16 +32,16 @@
       "name": "Linked List (k=15~24)",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"list 15 24 200",
+      "input":"list 15 24 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 20
     },
     {
-      "name": "Linked List (k=25~30)",
+      "name": "Linked List (k=25~33)",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"list 25 30 10",
+      "input":"list 25 33 1",
       "comparison": "included",
       "timeout": 1200,
       "points": 20
