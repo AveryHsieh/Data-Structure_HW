@@ -14,7 +14,7 @@
       "name": "Insertion Sort",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"insertion 20 30 2",
+      "input":"insertion 21 30 1",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
