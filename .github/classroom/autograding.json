@@ -11,10 +11,10 @@
       "points": 10
     },
     {
-      "name": "Insetion Sort",
+      "name": "Insertion Sort",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"insertion 15 30 10",
+      "input":"insertion 20 30 2",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
