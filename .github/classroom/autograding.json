@@ -14,56 +14,10 @@
       "name": "Insetion Sort",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"insertion 15 18 10",
+      "input":"insertion 15 30 10",
       "comparison": "included",
       "timeout": 1200,
-      "points": 20
-    },
-    {
-      "name": "Merge Sort",
-      "setup": "make a.out",
-      "run": "./a.out ",
-      "input":"merge 15 18 10",
-      "comparison": "included",
-      "timeout": 1200,
-      "points": 20
-    },
-    {
-      "name": "Randomized Quick Sort (Lomuto)",
-      "setup": "make a.out",
-      "run": "./a.out ",
-      "input":"quick-Lomuto 15 18 10",
-      "comparison": "included",
-      "timeout": 1200,
-      "points": 20
-    },
-    {
-      "name": "Randomized Quick Sort (Hoare)",
-      "setup": "make a.out",
-      "run": "./a.out ",
-      "input":"quick-Hoare 15 18 10",
-      "comparison": "included",
-      "timeout": 1200,
-      "points": 10
-    }
-    ,
-    {
-      "name": "Randomized Quick Sort (3 Way)",
-      "setup": "make a.out",
-      "run": "./a.out ",
-      "input":"quick-3way 15 18 10",
-      "comparison": "included",
-      "timeout": 1200,
-      "points": 10
-    },
-    {
-      "name": "Counting Sort",
-      "setup": "make a.out",
-      "run": "./a.out ",
-      "input":"counting 15 18 10",
-      "comparison": "included",
-      "timeout": 1200,
-      "points": 10
+      "points": 90
     }
   ]
 }
