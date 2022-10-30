@@ -11,10 +11,10 @@
       "points": 10
     },
     {
-      "name": "Insertion Sort",
+      "name": "Merge Sort",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"insertion 21 30 1",
+      "input":"merge 15 30 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
