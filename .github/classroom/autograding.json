@@ -14,7 +14,7 @@
       "name": "Merge Sort",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"merge 15 30 10",
+      "input":"merge 29 29 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
