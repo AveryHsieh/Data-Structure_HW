@@ -11,10 +11,10 @@
       "points": 10
     },
     {
-      "name": "Merge Sort",
+      "name": "Quick Sort - Lomuto",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"merge 30 30 3",
+      "input":"quick-Lomuto 15 30 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
