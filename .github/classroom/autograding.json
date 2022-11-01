@@ -11,10 +11,10 @@
       "points": 10
     },
     {
-      "name": "Quick Sort - Lomuto",
+      "name": "Quick Sort - Hoare",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"quick-Lomuto 19 19 3",
+      "input":"quick-Hoare 15 30 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
