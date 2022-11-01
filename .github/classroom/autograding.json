@@ -14,7 +14,7 @@
       "name": "Quick Sort - Hoare",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"quick-Hoare 15 30 10",
+      "input":"quick-Hoare 18 19 1",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
