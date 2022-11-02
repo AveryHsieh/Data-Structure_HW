@@ -11,10 +11,10 @@
       "points": 10
     },
     {
-      "name": "Quick Sort - 3Way",
+      "name": "Counting Sort",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"quick-3way 15 30 10",
+      "input":"counting 15 30 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
