@@ -11,10 +11,10 @@
       "points": 10
     },
     {
-      "name": "Quick Sort - Hoare",
+      "name": "Quick Sort - 3Way",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"quick-Hoare 18 19 1",
+      "input":"quick-3way 15 30 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
