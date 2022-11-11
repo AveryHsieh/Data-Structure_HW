@@ -18,6 +18,7 @@ void MergeSortTest();
 void LomutoQuickSortTest();
 
 void HoareQuickSortTest();
+void HoareQuickSortTest_try();
 
 void ThreeWayQuickSortTest();
 
@@ -45,7 +46,7 @@ int main()
         }
         else if (sortingWay == "quick-Hoare")//check random
         {
-            HoareQuickSortTest();
+            HoareQuickSortTest_try();
         }
         else if (sortingWay == "quick-3way")//check random
         {
@@ -295,7 +296,7 @@ void LomutoQuickSortTest()
 
 
 
-//Hoare
+//Hoare1
 
 
 int HoarePartition(vector<int> arr, int low, int high)
@@ -401,6 +402,148 @@ void HoareQuickSortTest()
     }
 
 }
+
+
+//Partitioning using Hoare's partition scheme.
+
+int partitionHoare(vector<int>inputHoare, int lowerboundIndex, int upperboundIndex)
+
+{
+
+    int pivot = inputHoare[lowerboundIndex];
+
+    int startIndex = lowerboundIndex - 1;
+
+    int endIndex = upperboundIndex + 1;
+
+
+
+    while (true)
+
+    {
+
+        // Finding the first element from the left that's greater than or 
+
+        // equal to the pivot.
+
+        do
+
+        {
+
+            startIndex++;
+
+        } while (inputHoare[startIndex] < pivot);
+
+
+
+        // Finding the first element from the right that's element smaller 
+
+        // than or equal to the pivot.
+
+        do {
+
+            endIndex--;
+
+        } while (inputHoare[endIndex] > pivot);
+
+
+
+        // If the left index and right index meet or cross each other, 
+
+        // partition returns the index of the right index that now 
+
+        // represents a smaller index than the left index. That is, it
+
+        // returns the endIndex.
+
+        if (startIndex >= endIndex)
+
+            return endIndex;
+
+        // If start and end index have not met or crossed each other, we've 
+
+        // found an inversion so we swap the two values.
+
+        swap(inputHoare[startIndex], inputHoare[endIndex]);
+
+    }
+
+}
+
+
+
+//Implementing quick sort using Hoare's partition.
+
+void quickSortHoare(vector<int>inputHoare, int lowerboundIndex, int upperboundIndex)
+
+{
+
+    if (lowerboundIndex < upperboundIndex) {
+
+        //Partitioning puts the element inputHoare[partitionIndex] at its 
+
+        //rightful place.
+
+        int partitionIndex = partitionHoare(inputHoare, lowerboundIndex, upperboundIndex);
+
+        // Sorting the subarray till the partition element. It contains  
+
+        // elements lower than the partition element.
+
+        quickSortHoare(inputHoare, lowerboundIndex, partitionIndex);
+
+        // Sorting the subarray after the partition element. It contains 
+
+        // elements larger than the partition element.
+
+        quickSortHoare(inputHoare, partitionIndex + 1, upperboundIndex);
+
+    }
+
+}
+
+
+
+void HoareQuickSortTest_try()
+{
+    srand(time(NULL));
+
+    int start, end, repeat;
+    cin >> start;
+    cin >> end;
+    cin >> repeat;
+
+
+    cout << "重複 " << repeat << " 次取平均" << "\n";
+    for (int k = start; k < (end + 1); k++)
+    {
+
+        double sortingTotalSpendTime = 0;
+        for (int n = 0; n < repeat; n++)
+        {
+            vector<int> InputArray;
+
+            for (int i = 0; i < pow(2, k); i++)
+            {
+                InputArray.push_back((rand() % 1000) + 1);
+            }
+
+            double sorting_START, sorting_END;
+            sorting_START = clock();
+
+            quickSortHoare(InputArray, 0, pow(2, k) - 1);
+
+            sorting_END = clock();
+            sortingTotalSpendTime += ((sorting_END - sorting_START) / CLOCKS_PER_SEC);
+        }
+
+        double sortingAvrgSpendTime = sortingTotalSpendTime / repeat;
+        cout << endl << "Dynamic Array新增2^" << k << "個隨機數後用Quick Sort排序(Hoare Partition_try)所需的時間:" << sortingAvrgSpendTime << " sec" << endl << endl;
+    }
+
+}
+
+
 
 
 //Three Way

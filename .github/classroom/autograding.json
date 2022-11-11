@@ -11,10 +11,10 @@
       "points": 10
     },
     {
-      "name": "Counting Sort",
+      "name": "QS H_try",
       "setup": "make a.out",
       "run": "./a.out ",
-      "input":"counting 15 30 10",
+      "input":"quick-Hoare 15 30 10",
       "comparison": "included",
       "timeout": 1200,
       "points": 90
